@@ -7,7 +7,9 @@ import datetime
 import sqlite3
 import ast
 
-TOKEN = "RGAPI-24bb97cd-8a1d-4351-b664-891f558c75cf"
+TOKEN = 0
+if not TOKEN:
+    TOKEN = input("Missing RiotAPIToken: ")
 cass.set_riot_api_key(TOKEN)
 
 
